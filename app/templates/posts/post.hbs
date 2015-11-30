@@ -2,6 +2,9 @@
 
 <article>
   {{model.body}}
-  </article>
-
+</article>
   {{outlet}}
+
+{{#link-to 'posts.post.edit' model}}Edit{{/link-to}}
+
+<button {{action 'delete'}} id="delete">Delete</button>
